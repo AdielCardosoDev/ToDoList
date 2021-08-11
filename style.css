@@ -40,13 +40,45 @@ body{
     width: 45px;
     border: 1px solid #343A40;
     background-color: #343A40;
+    border-radius: 5px;
     outline: none;   
     color: #ffff;
 }
 
 .topo button:hover{
-    background-color: #FCA311;
-    border: 1px solid #343A40;
+    color: #E63946;
     cursor: pointer;
 }
+
+#listaTarefas{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li{
+    padding: 20px;
+    background-color: #343A40;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnAcao{
+    border-radius: 5px;
+    border: 1px solid #343A40;
+    background-color: #E63946;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btnAcao:hover{
+    color: #343A40;    
+}
+
 
