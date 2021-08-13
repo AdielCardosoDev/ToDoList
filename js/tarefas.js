@@ -43,15 +43,24 @@ function criarTagLi(tarefa){
     var btnEditar = document.createElement('button');
     btnEditar.classList.add('btnAcao');
     btnEditar.innerHTML = '<i class="fa fa-pencil"></i>';
-
+    btnEditar.setAttribute('onClick', 'editar('+tarefa.id+')');
+    
     var btnExcluir = document.createElement('button');
     btnExcluir.classList.add('btnAcao');
     btnExcluir.innerHTML = '<i class="fa fa-trash"></i>';
-
+    btnExcluir.setAttribute('onClick', 'excluir('+tarefa.id+')');
     div.appendChild(btnEditar);
     div.appendChild(btnExcluir);
 
     li.appendChild(span);
     li.appendChild(div);
     return li;
+}
+
+function editar(idTarefa){
+    alert(idTarefa);
+}
+
+function excluir(idTarefa){
+    alert(idTarefa);
 }
